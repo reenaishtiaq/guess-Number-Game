@@ -1,5 +1,3 @@
-
-
 document.querySelector("#easy").style = "display: none;";
 document.querySelector("#medium").style = "display: none;";
 document.querySelector("#hard").style = "display: none;";
