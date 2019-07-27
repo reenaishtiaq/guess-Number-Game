@@ -6,24 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>game</title>
 </head>
 
 <body>
-    <main>
-        <div id="userlevel">
-            <button id="level">Easy Level</button>
-            <button id="level">Medium Level</button>
-            <button id="level">Hard Level</button>
-        </div>
-        <div id="usercheck">
-            
-            <input id="userInput" type="number">
-            <button id="check" onclick="myNumber()">Check number</button>
-            <p></p>
+    <!-- For main page -->
+    <section id="main">
+
+        <h1> Welcome To My Guess The Number Game </h1>
+        <h3>Select a level to play!!</h3>
+
+        <div id="mainbtn">
+
+            <button class="levelbtn" onclick="easy()"> Easy Level </button>
+            <button class="levelbtn" onclick="medium()"> Medium Level </button>
+            <button class="levelbtn" onclick="hard()"> Hard Level </button>
 
         </div>
-    </main>
+    </section>
+
+    <!-- For Easy Level page -->
+    <section id="easy">
+
+        <h2 id="easylvl">This is the level EASY</h2>
+        <p>You can choose a number from 0 to 10 </p>
+
+    </section>
+
+    <!-- For Medium Level page -->
+    <section id="medium">
+
+        <h2 id="mediumlvl">This is the level MEDIUM</h2>
+        <p>You can choose a number from 0 to 100 </p>
+
+    </section>
+
+    <!-- For Hard Level page -->
+    <section id="hard">
+
+        <h2 id="hardlvl">This is the level HARD</h2>
+        <p>You can choose a number from 0 to 500 </p>
+
+    </section>
+    <section id="user">
+        <input class="userinput" type="number">
+        <button class="showresult" onclick="displayResult()"> Show Result </button>
+    </section>
     <script src="script.js"></script>
 </body>
 

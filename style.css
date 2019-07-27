@@ -1,49 +1,27 @@
 body {
-    background-image: url(images/guess-Number1.png);
+    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0px;
-    padding: 0;
 }
+h1 {
+    display: flex;
+    justify-content: center;
 
-#level {
-    padding: 10px;
-    margin: 10px;
-    font-size: 15px;
-    outline: none;
-    border-radius: 50px;
-    border: none;
-    background-image: linear-gradient(#5f0f0f, #ffffff);
 }
-#level:hover {
-    background-image: linear-gradient(#5f0f0f, #5f0f0f);
-    cursor: pointer;
-    color: #ffffff;
-    transition: all ease-in 0.5s;
-}
-#userlevel {
+h3 {
     display: flex;
     justify-content: center;
-    margin: 2em;
-} 
-#usercheck {
+
+}
+#mainbtn {
     display: flex;
     justify-content: center;
+
 }
-#check {
-    outline: none;
-    padding: 10px;
-    margin: 10px;
-    font-size: 15px;
-    background-image: linear-gradient(#5f0f0f, #c7c70a);
+.levelbtn {
+    margin: 2em 1em;
+    padding: 15px;
 }
-#check:hover {
-    background-image: linear-gradient(#a28b60, #c5c513);
-    cursor: pointer;
-    color: #ffffff;
-    transition: all ease-in 0.5s;
-}
-p{
-    font-size: 30px;
-    color: rgb(44, 20, 20);
+#easy{
+    display: block;
 }

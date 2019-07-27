@@ -1,73 +1,88 @@
 
-// for easy level
-var num = Math.floor(Math.random() * 10);
+let numEasy = parseInt(Math.random() * 10);
+let numMedium = parseInt(Math.random() * 100);
+let numHard = parseInt(Math.random() * 500);
 
-function myNumber() {
-    let myInput = parseInt(document.querySelector("#userInput").value);
+document.querySelector("#easy").style = "display: none;";
+document.querySelector("#medium").style = "display: none;";
+document.querySelector("#hard").style = "display: none;";
+document.querySelector("#user").style = "display: none;";
 
+// for easy level page 
+function easy() {
+    document.querySelector("#easy").style = "display: flex;";
+    document.querySelector("#medium").style = "display: none;";
+    document.querySelector("#hard").style = "display: none;";
+    document.querySelector("#user").style = "display: flex;";
+}
 
+// for medium level page
+function medium() {
+    document.querySelector("#easy").style = "display: none;";
+    document.querySelector("#medium").style = "display: flex;";
+    document.querySelector("#hard").style = "display: none;";
+    document.querySelector("#user").style = "display: flex;";
+}
 
-    if (num > myInput) {
-        document.querySelector("p").innerHTML = " Too small";
+// for hard level page
+function hard() {
+    document.querySelector("#easy").style = "display: none;";
+    document.querySelector("#medium").style = "display: none;";
+    document.querySelector("#hard").style = "display: flex;";
+    document.querySelector("#user").style = "display: flex;";
+}
 
+// Easy level
 
+function displayResult() {
+
+    let myInput = document.querySelector(".userinput").value;
+
+    if (myInput == "") {
+        alert("please enter a number")
     } else {
-        if (num < myInput) {
-            document.querySelector("p").innerHTML = "Too large";
-
-        }else if(num == myInput) {
-            document.querySelector("p").innerHTML = "Waaoo!! you got";
-
-
+        if (myInput < numEasy) {
+            alert("too small");
+        } else if (myInput > numEasy) {
+            alert("too large");
+        } else if (myInput == numEasy) {
+            alert("congratulate");
         }
     }
 }
+// medium level
+function displayResult() {
+    let myInput = document.querySelector(".userinput").value;
 
-// // // for medium level
+    if (myInput == "") {
+        alert("please enter a number")
+    } else {
+        if (numMedium > myInput) {
+            alert("too small");
+        } else if (numMedium < myInput) {
+            alert("too large");
+        } else if (numMedium == myInput) {
+            alert("congratulate");
 
+        }
 
-// function myNumber() {
-//     var num = Math.floor(Math.random() * 100);
-//     let myInput = document.querySelector("input").value;
+    }
+}
+// hard levl
+function displayResult() {
+    let myInput = document.querySelector(".userinput").value;
 
+    if (myInput == "") {
+        alert("please enter a number")
+    } else {
+        if (numHard > myInput) {
+            alert("too small");
+        } else if (numHard < myInput) {
+            alert("too large");
+        } else if (numHard == myInput) {
+            alert("congratulate");
 
+        }
 
-//     if (num < myInput) {
-//         document.querySelector("p").innerHTML = "Too Small";
-
-
-//     } else {
-//         if (num > myInput) {
-//             document.querySelector("p").innerHTML = "Too large";
-
-//         }else  {
-//             document.querySelector("p").innerHTML = "Waaoo!! you got";
-
-
-//         }
-//     }
-// }
-
-// // // for hard level
-
-// function myNumber() {
-//     var num = Math.floor(Math.random() * 400);
-//     let myInput = document.querySelector("input").value;
-
-
-
-//     if (num < myInput) {
-//         document.querySelector("p").innerHTML = "Too Small";
-
-
-//     } else {
-//         if (num > myInput) {
-//             document.querySelector("p").innerHTML = "Too large";
-
-//         }else  {
-//             document.querySelector("p").innerHTML = "Waaoo!! you got";
-
-
-//         }
-//     }
-// }
+    }
+}
