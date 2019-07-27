@@ -13,7 +13,7 @@
     <!-- For main page -->
     <section id="main">
 
-        <h1> Welcome To My Guess The Number Game </h1>
+        <h1> <u>Welcome To My Guess The Number Game</u> </h1>
         <h3>Select a level to play!!</h3>
 
         <div id="mainbtn">
@@ -24,33 +24,34 @@
 
         </div>
     </section>
+    <section id="game">
+        <!-- For Easy Level page -->
+        <section id="easy">
 
-    <!-- For Easy Level page -->
-    <section id="easy">
+            <h2 id="easylvl">This is the level EASY</h2>
+            <p>You can choose a number from 0 to 10 </p>
 
-        <h2 id="easylvl">This is the level EASY</h2>
-        <p>You can choose a number from 0 to 10 </p>
+        </section>
 
-    </section>
+        <!-- For Medium Level page -->
+        <section id="medium">
 
-    <!-- For Medium Level page -->
-    <section id="medium">
+            <h2 id="mediumlvl">This is the level MEDIUM</h2>
+            <p>You can choose a number from 0 to 100 </p>
 
-        <h2 id="mediumlvl">This is the level MEDIUM</h2>
-        <p>You can choose a number from 0 to 100 </p>
+        </section>
 
-    </section>
+        <!-- For Hard Level page -->
+        <section id="hard">
 
-    <!-- For Hard Level page -->
-    <section id="hard">
+            <h2 id="hardlvl">This is the level HARD</h2>
+            <p>You can choose a number from 0 to 500 </p>
 
-        <h2 id="hardlvl">This is the level HARD</h2>
-        <p>You can choose a number from 0 to 500 </p>
-
-    </section>
-    <section id="user">
-        <input class="userinput" type="number">
-        <button class="showresult" onclick="displayResult()"> Show Result </button>
+        </section>
+        <section id="user">
+            <input class="userinput" type="number" placeholder="Enter a number">
+            <button id="showresult" onclick="displayResult()"> Show Result </button>
+        </section>
     </section>
     <script src="script.js"></script>
 </body>
